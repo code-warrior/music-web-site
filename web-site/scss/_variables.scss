@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+////
+/// Sass Variables
+////
+
+///
+/// Grid
+///
+$grid-column: 60px;
+$grid-gutter: math.div($grid-column, 3);
+$grid-unit: $grid-column + $grid-gutter;
+
+///
+/// Colors
+///
+$background-color--header: #f5f4f4;
+
+///
+/// Dimensions
+///
+$line-height: 20px;

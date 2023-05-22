@@ -1,1 +1,2 @@
 * Typeface: _Ringside_, designed by Sara Soskolne and her team at Hoefler & Co in 2017.
+* Add message about trackers

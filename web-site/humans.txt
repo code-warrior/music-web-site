@@ -1,19 +1,19 @@
 /* CREDITS */
-    Typeface: Ringside
-    Authors: Sara Soskolne (https://www.monotype.com/studio/sara-soskolne) and her team at Hoefler & Co
-    Release Year: 2017
+  Typeface: Ringside
+  Authors: Sara Soskolne (https://www.monotype.com/studio/sara-soskolne) and her team at Hoefler & Co
+  Release Year: 2017
 
-    Images: Deidre Schoo (http://www.deidreschoo.com/), Roy Vanegas
+  Images: Deidre Schoo (http://www.deidreschoo.com/), Roy Vanegas
 
-    CSS Reset Document:
-        Original code: Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
-        Modification: Roy Vanegas, 22 May 2023
+  CSS Reset Document:
+    Original code: Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
+    Modification: Roy Vanegas, 22 May 2023
 
 /* SITE */
-    Languages: English
-    Tools: VS Code, Sass
+  Languages: English
+  Tools: VS Code, Sass
 
 /* NOTE */
-    Trackers: None. Zero. Zilch. This site does not track any of its visitors.
+  Trackers: None. Zero. Zilch. This site does not track any of its visitors.
 
-    This file: Read more about humans.txt at https://humanstxt.org
+  This file: Read more about humans.txt at https://humanstxt.org

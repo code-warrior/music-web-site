@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+a {
+  text-decoration: none;
+
+  &:link {
+    color: $color--reading-text;
+  }
+
+  &:visited {
+    color: $color--reading-text;
+  }
+}

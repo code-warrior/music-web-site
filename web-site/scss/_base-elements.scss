@@ -18,3 +18,24 @@ main {
   margin: auto;
   width: (12 * $grid-unit);
 }
+
+footer {
+  color: #aaa;
+  font-size: (.75 * 1rem);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-bottom: (1.5 * $line-height);
+
+  a {
+    &:link,
+    &:visited {
+      color: #aaa;
+    }
+
+    &:hover {
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤟🏽</text></svg>") 0 20, pointer;
+    }
+  }
+}

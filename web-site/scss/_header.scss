@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+header {
+  color: white;
+  background-color: #ddd1; // transparent; // $background-color--header;
+  height: (5 * $line-height);
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: (12 * $grid-unit);
+
+    h1 {
+      padding-top: (2 * $line-height);
+    }
+  }
+}

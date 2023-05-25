@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.header-container {
+  nav {
+    margin-top: $line-height;
+
+    a {
+      display: inline-block;
+      color: $color--reading-text;
+      text-align: center;
+      width: $grid-unit;
+      height: (3 * $line-height);
+      background-color: #6664; // $color--secondary;
+      color: white;
+      transition: $transition-time--links;
+
+      &:hover {
+        background-color: transparent; // $background-color--header;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+
+      li {
+        height: (4 * $line-height);
+        line-height: (3 * $line-height);
+        width: $grid-unit;
+        transition: $transition-time--links;
+
+        &:not(:last-of-type) {
+          // border-right: 1px solid $color--border;
+        }
+
+        &:hover {
+          //border-right-color: $background-color--header;
+        }
+      }
+    }
+  }
+}

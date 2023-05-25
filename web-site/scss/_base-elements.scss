@@ -45,3 +45,21 @@ strong,
 th {
   font-weight: $semi-bold;
 }
+
+figure {
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    background-color: $background-color--header;
+    width: 15%;
+    padding: 4px 12px;
+    height: (.875 * $line-height);
+    line-height: (.875 * $line-height);
+    margin: -2px auto 0;
+    font-size: (.875 * 1rem);
+    color: $color--caption;
+    text-align: center;
+  }
+}

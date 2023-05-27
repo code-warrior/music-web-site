@@ -1,23 +1,28 @@
-/* CREDITS */
+## CREDITS
+
   Typeface: Ringside
-  Authors: Sara Soskolne (https://www.monotype.com/studio/sara-soskolne) and her team at Hoefler & Co
-  Release Year: 2017
+    Authors: Sara Soskolne (https://www.monotype.com/studio/sara-soskolne) and her team at Hoefler & Co
+    Release Year: 2017
 
   Images: Deidre Schoo (http://www.deidreschoo.com/), Roy Vanegas
 
-  CSS Reset Document:
-    Original code: Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
+  CSS Reset Document: Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
     Modification: Roy Vanegas, 22 May 2023
 
   Emoji Cursor: https://www.emojicursor.app/
 
-/* SITE */
+## SITE
+
   Design/Programming: Roy Vanegas
+
   Languages: English
+
   Tools: Sketch, VS Code, Sass
+
   Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
 
-/* NOTES */
+## NOTES
+
   Trackers: None. Zero. Zilch. This site does not track any of its visitors. (Thanks, @sara!)
 
   This file: Read more about humans.txt at https://humanstxt.org

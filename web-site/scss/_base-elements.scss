@@ -20,7 +20,7 @@ main {
 }
 
 footer {
-  color: #aaa;
+  color: $color--reading-text;
   font-size: (.75 * 1rem);
   text-align: center;
   position: fixed;
@@ -31,7 +31,7 @@ footer {
   a {
     &:link,
     &:visited {
-      color: #aaa;
+      color: $color--reading-text;
     }
 
     &:hover {

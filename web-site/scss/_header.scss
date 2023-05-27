@@ -3,7 +3,7 @@
 header {
   color: white;
   background-color: #ddd1; // transparent; // $background-color--header;
-  height: (5 * $line-height);
+  height: $height--header;
 
   .header-container {
     display: flex;

@@ -2,7 +2,7 @@
 
 header {
   color: white;
-  background-color: #ddd1; // transparent; // $background-color--header;
+  background-color: $background-color--header;
   height: $height--header;
 
   .header-container {

@@ -15,8 +15,9 @@
   Design/Programming: Roy Vanegas
   Languages: English
   Tools: Sketch, VS Code, Sass
+  Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
 
 /* NOTES */
-  Trackers: None. Zero. Zilch. This site does not track any of its visitors.
+  Trackers: None. Zero. Zilch. This site does not track any of its visitors. (Thanks, @sara!)
 
   This file: Read more about humans.txt at https://humanstxt.org

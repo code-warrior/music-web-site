@@ -1,12 +1,16 @@
 ## CREDITS
 
-  Typeface: Ringside
+  Typeface:
+    Name: Ringside
     Authors: Sara Soskolne (https://www.monotype.com/studio/sara-soskolne) and her team at Hoefler & Co
     Release Year: 2017
 
-  Images: Deidre Schoo (http://www.deidreschoo.com/), Roy Vanegas
+  Images:
+    Home page background hero image: black-box-theatre--hunter-college--26-september-2009.jpg
+    Credit: Roy Vanegas
 
-  CSS Reset Document: Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
+  CSS Reset Document:
+    Original code: Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
     Modification: Roy Vanegas, 22 May 2023
 
   Emoji Cursor: https://www.emojicursor.app/

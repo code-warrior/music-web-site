@@ -12,6 +12,12 @@ $grid-gutter: math.div($grid-column, 3);
 $grid-unit: $grid-column + $grid-gutter;
 
 ///
+/// Breakpoints
+///
+$breakpoint--desktop: (12.8 * $grid-unit);
+$breakpoint--tablet: (10 * $grid-unit);
+
+///
 /// Colors
 ///
 $background-color--root: rgb(0, 0, 0);

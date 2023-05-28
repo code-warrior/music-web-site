@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: (12 * $grid-unit);
+    width: $width--desktop;
 
     h1 {
       padding-top: (2 * $line-height);

@@ -14,6 +14,7 @@ $grid-unit: $grid-column + $grid-gutter;
 ///
 /// Colors
 ///
+$background-color--root: rgb(0, 0, 0);
 $background-color--header: rgba(221, 221, 221, .07);
 $color--reading-text: rgb(230, 230, 230);
 $color--tertiary: rgb(174, 174, 174);

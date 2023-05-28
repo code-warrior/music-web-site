@@ -26,12 +26,22 @@ main {
     text-align: center;
     font-size: 160%;
     line-height: 1.4;
+
+    @media (max-width: $breakpoint--desktop) {
+      font-size: 140%;
+      width: 57%;
+    }
   }
 }
 
 main {
   margin: auto;
   width: $width--desktop;
+
+  @media (max-width: $breakpoint--desktop) {
+    width: $width--tablet;
+
+  }
 }
 
 footer {

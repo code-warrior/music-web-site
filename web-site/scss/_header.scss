@@ -14,5 +14,9 @@ header {
     h1 {
       padding-top: (2 * $line-height);
     }
+
+    @media (max-width: $breakpoint--desktop) {
+      width: $width--tablet;
+    }
   }
 }

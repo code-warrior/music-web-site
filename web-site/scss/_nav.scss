@@ -23,7 +23,7 @@
       display: flex;
 
       li {
-        height: (4 * $line-height);
+        height: $height--nav--li;
         line-height: $height--header--mobile;
         width: $grid-unit;
         transition: $transition-time--links;

@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 header {
-  color: white;
+  color: $color--reading-text;
   background-color: $background-color--header;
   height: $height--header;
 

@@ -15,7 +15,7 @@
       transition: $transition-time--links;
 
       &:hover {
-        background-color: transparent; // $background-color--header;
+        background-color: transparent;
       }
     }
 
@@ -30,11 +30,9 @@
         transition: $transition-time--links;
 
         &:not(:last-of-type) {
-          // border-right: 1px solid $color--border;
         }
 
         &:hover {
-          //border-right-color: $background-color--header;
         }
       }
     }

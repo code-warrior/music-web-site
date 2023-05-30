@@ -16,10 +16,10 @@ body {
 }
 
 main {
-  height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 80vh;
 
   p {
     width: 48%;
@@ -28,19 +28,18 @@ main {
     line-height: 1.4;
 
     @media (max-width: $breakpoint--desktop) {
-      font-size: 140%;
       width: 57%;
+      font-size: 140%;
     }
   }
 }
 
 main {
-  margin: auto;
   width: $width--desktop;
+  margin: auto;
 
   @media (max-width: $breakpoint--desktop) {
     width: $width--tablet;
-
   }
 }
 
@@ -77,14 +76,14 @@ figure {
   }
 
   figcaption {
-    background-color: $background-color--header;
     width: 15%;
-    padding: 4px 12px;
     height: (.875 * $line-height);
-    line-height: (.875 * $line-height);
     margin: -2px auto 0;
-    font-size: (.875 * 1rem);
+    padding: 4px 12px;
+    background-color: $background-color--header;
     color: $color--caption;
+    font-size: (.875 * 1rem);
+    line-height: (.875 * $line-height);
     text-align: center;
   }
 }

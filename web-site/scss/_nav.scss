@@ -6,11 +6,11 @@
 
     a {
       display: inline-block;
-      color: $color--reading-text;
-      text-align: center;
       width: $grid-unit;
       height: $height--header--mobile;
+      text-align: center;
       background-color: $background-color--anchors--nav;
+      color: $color--reading-text;
       transition: $transition-time--links;
 
       &:hover {
@@ -19,15 +19,14 @@
     }
 
     ul {
-      list-style-type: none;
       display: flex;
+      list-style-type: none;
 
       li {
         height: $height--nav--li;
         line-height: $height--header--mobile;
         width: $grid-unit;
         transition: $transition-time--links;
-
       }
     }
   }

@@ -13,6 +13,13 @@ header {
 
     h1 {
       padding-top: (2 * $line-height);
+    h2 {
+      display: none;
+
+      @media (max-width: $breakpoint--tablet) {
+        display: block;
+      }
+    }
     }
 
     @media (max-width: $breakpoint--desktop) {

@@ -1,4 +1,5 @@
 @use 'sass:math';
+@use 'sass:color';
 
 ////
 /// Sass Variables
@@ -25,6 +26,7 @@ $background-color--header: rgba(221, 221, 221, .07);
 $color--reading-text: rgb(230, 230, 230);
 $color--tertiary: rgb(174, 174, 174);
 $color--caption: rgb(102, 102, 102);
+$background-color--anchors--nav: transparentize($color--caption, .73);
 
 ///
 /// Dimensions

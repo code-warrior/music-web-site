@@ -9,7 +9,7 @@
       color: $color--reading-text;
       text-align: center;
       width: $grid-unit;
-      height: (3 * $line-height);
+      height: $height--header--mobile;
       background-color: $background-color--anchors--nav;
       transition: $transition-time--links;
 
@@ -24,7 +24,7 @@
 
       li {
         height: (4 * $line-height);
-        line-height: (3 * $line-height);
+        line-height: $height--header--mobile;
         width: $grid-unit;
         transition: $transition-time--links;
 

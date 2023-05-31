@@ -19,6 +19,8 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: auto;
+  width: $width--desktop;
   height: 80vh;
 
   p {
@@ -35,8 +37,6 @@ main {
 }
 
 main {
-  width: $width--desktop;
-  margin: auto;
 
   @media (max-width: $breakpoint--desktop) {
     width: $width--tablet;

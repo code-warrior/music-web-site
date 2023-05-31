@@ -42,6 +42,11 @@ main {
   @media (max-width: $breakpoint--desktop) {
     width: $width--tablet;
   }
+
+  @media (max-width: $breakpoint--tablet) {
+    width: auto;
+    height: 81vh;
+  }
 }
 
 footer {

@@ -33,10 +33,11 @@ main {
       width: 57%;
       font-size: 140%;
     }
-  }
-}
 
-main {
+    @media (max-width: $breakpoint--tablet) {
+      width: $width--mobile;
+    }
+  }
 
   @media (max-width: $breakpoint--desktop) {
     width: $width--tablet;

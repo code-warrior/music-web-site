@@ -25,5 +25,11 @@ header {
     @media (max-width: $breakpoint--desktop) {
       width: $width--tablet;
     }
+
+    @media (max-width: $breakpoint--tablet) {
+      display: block;
+      width: auto;
+    }
+  }
   }
 }

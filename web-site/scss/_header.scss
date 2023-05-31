@@ -31,5 +31,8 @@ header {
       width: auto;
     }
   }
+
+  @media (max-width: $breakpoint--tablet) {
+    background-color: transparent;
   }
 }

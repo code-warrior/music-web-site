@@ -29,6 +29,11 @@
         transition: $transition-time--links;
       }
     }
+
+    @media (max-width: $breakpoint--tablet) {
+      margin: 0 auto;
+      width: $width--mobile;
+    }
   }
 }
 

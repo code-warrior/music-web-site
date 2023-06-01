@@ -57,10 +57,10 @@
       display: block;
       width: $width--drop-down-menu;
       line-height: $height--drop-down-menu-item;
-      background-color: $background-color--anchors--nav;
+      background-color: $background-color--anchors--nav--mobile;
 
       &:hover {
-        background-color: transparent;
+        background-color: $background-color--anchors--nav--tap;
       }
     }
 

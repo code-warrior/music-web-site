@@ -22,9 +22,9 @@
       list-style-type: none;
 
       li {
+        width: $grid-unit;
         height: $height--nav--li;
         line-height: $height--header--mobile;
-        width: $grid-unit;
         transition: $transition-time--links;
       }
     }

@@ -66,3 +66,25 @@ $background-color--anchors--nav: transparentize($color--caption, .73);
 /// Transition Times
 ///
 $transition-time--links: 375ms;
+
+$drop-down-menu-count: 1;
+
+///
+/// Widths
+///
+$width--drop-down-menu-item: 150px;
+$width--drop-down-menu: ($width--drop-down-menu-item * $drop-down-menu-count);
+
+///
+/// Heights
+///
+$height--drop-down-menu-item: 48px;
+$height--drop-down-menu-item--li: ($height--drop-down-menu-item);
+
+///
+/// Colors
+///
+$background-color--main: #21bde1;
+$background-color--nav: #fff;
+$color--text: #555;
+$color--nav-links: #000;

@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 .header-container {
-  nav {
+  #nav--desktop {
     margin-top: $line-height;
 
     a {
@@ -34,9 +34,67 @@
       margin: 0 auto;
       width: $width--mobile;
     }
-  }
-}
 
-#nav--mobile {
-  display: none;
+    @media (max-width: $breakpoint--mobile) {
+      display: none;
+    }
+  }
+
+  #nav--mobile {
+    display: none;
+    margin: 0 auto;
+    width: $width--drop-down-menu;
+    height: $height--drop-down-menu-item;
+
+    a {
+      display: block;
+      width: $width--drop-down-menu-item;
+      line-height: $height--drop-down-menu-item;
+      background-color: $background-color--anchors--nav;
+      color: $color--reading-text;
+      text: {
+        align: center;
+        decoration: none;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    > ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      > li {
+        position: relative;
+        flex-grow: 1;
+        margin: 0;
+        //background-color: $background-color--nav;
+        width: $width--drop-down-menu-item;
+
+        &:hover {
+          > ul {
+            visibility: visible;
+          }
+        }
+
+        > ul {
+          position: absolute;
+          left: 0;
+          visibility: hidden;
+
+          a {
+            line-height: $height--drop-down-menu-item--li;
+          }
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint--mobile) {
+      display: block;
+    }
+  }
 }

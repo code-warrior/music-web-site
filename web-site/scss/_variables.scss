@@ -25,6 +25,7 @@ $breakpoint--mobile: (5.5 * $grid-unit);
 $width--desktop: (12 * $grid-unit);
 $width--tablet: (8.75 * $grid-unit);
 $width--mobile: (5 * $grid-unit);
+$width--drop-down-menu: (2 * $grid-unit);
 
 ///
 /// Heights
@@ -66,5 +67,4 @@ $background-color--anchors--nav: transparentize($color--caption, .73);
 /// Transition Times
 ///
 $transition-time--links: 375ms;
-$width--drop-down-menu: ($width--drop-down-menu-item * $drop-down-menu-count);
 $height--drop-down-menu-item: 48px;

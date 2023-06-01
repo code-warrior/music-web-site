@@ -63,6 +63,8 @@ $color--tertiary: rgb(174, 174, 174);
 $background-color--root: rgb(0, 0, 0);
 $background-color--header: rgba(221, 221, 221, .07);
 $background-color--anchors--nav: transparentize($color--caption, .73);
+$background-color--anchors--nav--mobile: transparentize($background-color--root, .20);
+$background-color--anchors--nav--tap: rgb(139, 0, 0);
 
 ///
 /// Transition Times

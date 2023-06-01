@@ -66,6 +66,5 @@ $background-color--anchors--nav: transparentize($color--caption, .73);
 /// Transition Times
 ///
 $transition-time--links: 375ms;
-$drop-down-menu-count: 1;
 $width--drop-down-menu: ($width--drop-down-menu-item * $drop-down-menu-count);
 $height--drop-down-menu-item: 48px;

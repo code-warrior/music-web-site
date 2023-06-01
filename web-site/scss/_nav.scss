@@ -1,6 +1,17 @@
 @use 'variables' as *;
 
 .header-container {
+  nav {
+    ul {
+    }
+
+    a {
+      text-align: center;
+      color: $color--reading-text;
+      transition: $transition-time--links;
+    }
+  }
+
   #nav--desktop {
     margin-top: $line-height;
 
@@ -9,8 +20,6 @@
       width: $grid-unit;
       height: $height--header--mobile;
       background-color: $background-color--anchors--nav;
-      color: $color--reading-text;
-      transition: $transition-time--links;
 
       &:hover {
         background-color: transparent;
@@ -49,7 +58,6 @@
       width: $width--drop-down-menu-item;
       line-height: $height--drop-down-menu-item;
       background-color: $background-color--anchors--nav;
-      color: $color--reading-text;
 
       &:hover {
         background-color: transparent;

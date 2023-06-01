@@ -34,6 +34,7 @@ $line-height: 20px;
 $height--header: (5 * $line-height);
 $height--header--mobile: (3 * $line-height);
 $height--nav--li: (4 * $line-height);
+$height--drop-down-menu-item: (3 * $line-height);
 
 ///
 /// Font Stacks
@@ -67,4 +68,3 @@ $background-color--anchors--nav: transparentize($color--caption, .73);
 /// Transition Times
 ///
 $transition-time--links: 375ms;
-$height--drop-down-menu-item: 48px;

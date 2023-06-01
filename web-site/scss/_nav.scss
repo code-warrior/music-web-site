@@ -8,7 +8,6 @@
       display: inline-block;
       width: $grid-unit;
       height: $height--header--mobile;
-      text-align: center;
       background-color: $background-color--anchors--nav;
       color: $color--reading-text;
       transition: $transition-time--links;
@@ -52,10 +51,6 @@
       line-height: $height--drop-down-menu-item;
       background-color: $background-color--anchors--nav;
       color: $color--reading-text;
-      text: {
-        align: center;
-        decoration: none;
-      }
 
       &:hover {
         background-color: transparent;
@@ -64,15 +59,10 @@
 
     > ul {
       display: flex;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
 
       > li {
         position: relative;
-        flex-grow: 1;
         margin: 0;
-        //background-color: $background-color--nav;
         width: $width--drop-down-menu-item;
 
         &:hover {

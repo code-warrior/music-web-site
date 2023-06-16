@@ -15,6 +15,8 @@
 
   Emoji Cursor: https://www.emojicursor.app/
 
+  Audio Player: wavesurfer.js (https://wavesurfer.pages.dev/) by ktaspaugh (https://github.com/katspaugh)
+
 
 ## SITE
 

@@ -23,7 +23,15 @@
     }
   }
 
+  /// Wavesurfer embeds a div with a position of absolute as the parent to the
+  /// waveform. In order to ensure that Wavesurfer’s waveform scrolls underneath the
+  /// header, I need to do the following:
   &__waveform {
+    > div {
+      position: relative;
+      z-index: 0;
+    }
+
     &--container {
       width: (10 * $grid-unit);
     }

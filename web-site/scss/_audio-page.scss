@@ -27,6 +27,8 @@
   /// waveform. In order to ensure that Wavesurfer’s waveform scrolls underneath the
   /// header, I need to do the following:
   &__waveform {
+    position: relative;
+
     > div {
       position: relative;
       z-index: 0;

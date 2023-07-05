@@ -8,5 +8,7 @@
 @use 'nav' as *;
 
 /*
-sass scss/index.scss:css/style.css scss/_audio-page.scss:css/audio-page.css
- */
+sass scss/index.scss:css/style.css \
+  scss/_home-page.scss:css/home-page.css \
+  scss/_audio-page.scss:css/audio-page.css
+*/

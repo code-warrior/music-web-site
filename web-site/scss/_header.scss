@@ -2,7 +2,7 @@
 
 header {
   color: $color--reading-text;
-  background-color: $background-color--header;
+  background-color: $background-color--header--home-page;
   height: $height--header;
 
   .header-container {
@@ -16,7 +16,7 @@ header {
 
       @media (max-width: $breakpoint--tablet) {
         padding-top: 0;
-        background-color: $background-color--header;
+        background-color: $background-color--header--home-page;
         line-height: $height--header--mobile;
         text-align: center;
       }

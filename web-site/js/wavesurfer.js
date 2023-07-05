@@ -12,7 +12,11 @@ const canvas2D__Heat = document.createElement(`canvas`).getContext(`2d`),
     gradient__Heat = canvas2D__Heat.createLinearGradient(0, 0, 0, 100),
     canvas2D__x0x0x0 = document.createElement(`canvas`).getContext(`2d`),
     gradient__x0x0x0 = canvas2D__x0x0x0.createLinearGradient(0, 0, 0, 100),
-    loaders = document.querySelectorAll(`.composition__waveform > p`);
+    loaders = document.querySelectorAll(`.loader`);
+
+for (let i = 0; i < loaders.length; i++) {
+    loaders[i].textContent = "Loading audio. Please wait…"
+}
 
 const compositionTitles = [`heat`, `x0x0x0`];
 
@@ -97,7 +101,9 @@ heatWaveSurferPlayer.on(`pause`, () => {
 });
 
 heatWaveSurferPlayer.on(`ready`, () => {
-    loaders[0].style.display = `none`;
+    loaders[0].removeAttribute(`class`);
+    loaders[0].setAttribute(`class`, `disappear`);
+
     playButton[0].addEventListener(`click`, () => {
         if (heatWaveSurferPlayer.isPlaying()) {
             heatWaveSurferPlayer.pause();
@@ -116,7 +122,9 @@ x0x0x0WaveSurferPlayer.on(`pause`, () => {
 });
 
 x0x0x0WaveSurferPlayer.on(`ready`, () => {
-    loaders[1].style.display = `none`;
+    loaders[1].removeAttribute(`class`);
+    loaders[1].setAttribute(`class`, `disappear`);
+
     playButton[1].addEventListener(`click`, () => {
         if (x0x0x0WaveSurferPlayer.isPlaying()) {
             x0x0x0WaveSurferPlayer.pause();

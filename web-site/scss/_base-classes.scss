@@ -9,3 +9,16 @@
 .small-number {
   font-size: .8125rem;
 }
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: rgba(221, 221, 221, .2);
+}
+
+.disappear {
+  display: none;
+}

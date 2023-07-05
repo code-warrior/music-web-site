@@ -54,6 +54,13 @@ th {
 }
 
 figure {
+  display: block;
+  width: ($grid-unit + $grid-column);
+
+  a {
+    line-height: 0;
+  }
+
   img {
     display: block;
     width: 100%;

@@ -1,5 +1,7 @@
 @use 'variables' as *;
 
+main {
+  margin-top: $height--header;
 }
 
 .composition {

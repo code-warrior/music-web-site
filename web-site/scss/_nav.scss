@@ -37,6 +37,14 @@
       }
     }
 
+    .current {
+      background-color: transparent;
+
+      a {
+        background-color: transparent;
+      }
+    }
+
     @media (max-width: $breakpoint--tablet) {
       margin: 0 auto;
       width: $width--mobile;

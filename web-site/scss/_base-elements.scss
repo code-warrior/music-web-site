@@ -14,6 +14,7 @@ body {
     weight: $thin;
   }
 }
+
 footer {
   color: $color--reading-text;
   font-size: (.75 * 1rem);
@@ -69,6 +70,7 @@ figure {
     text-align: center;
   }
 }
+
 em,
 i {
   font-style: italic;
@@ -76,4 +78,8 @@ i {
 
 abbr {
   text-decoration: none;
+}
+
+p:not(:first-of-type) {
+  margin: $line-height 0;
 }

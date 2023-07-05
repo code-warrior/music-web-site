@@ -30,6 +30,7 @@ main {
   /// header, I need to do the following:
   &__waveform {
     position: relative;
+    z-index: 0;
 
     > div {
       position: relative;

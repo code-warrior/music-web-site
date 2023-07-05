@@ -24,9 +24,9 @@
 
   Languages: English
 
-  Tools: Sketch, VS Code, Sass
 
   Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
+  Tools: Sketch, VS Code, Sass, Wavesurfer.js
 
 
 ## NOTES

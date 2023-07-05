@@ -5,3 +5,60 @@
   height: (7 * $line-height);
   line-height: 1;
 }
+
+.composition {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 36px;
+  width: $width--desktop;
+
+  &__thumbnail {
+    &--container {
+      width: ($grid-unit + $grid-column);
+      margin-right: $grid-gutter;
+    }
+  }
+
+  &__waveform {
+    &--container {
+      width: (10 * $grid-unit);
+    }
+
+    &--play-pause-button {
+      border: 0;
+      line-height: $line-height;
+      padding: 10px 16px;
+    }
+  }
+
+  &__metadata--container {
+    margin-top: $line-height;
+    text-align: center;
+    font-size: 14px;
+    width: ($grid-unit + $grid-column);
+    margin-right: $grid-gutter;
+  }
+
+  &__synopsis--container {
+    margin-top: $line-height;
+    width: (10 * $grid-unit);
+  }
+}
+
+/// As in key-value pairs. For example,
+// <span class="key">Title</span>: <span class="value">x0x0x0</span>
+.key {
+  font-weight: bold;
+}
+
+#heat__waveform--play-pause-button {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#x0x0x0__waveform--play-pause-button {
+  background-color: rgb(61, 95, 123);
+  color: black;
+  cursor: pointer;
+}

@@ -22,10 +22,10 @@
 
   Design/Programming: Roy Vanegas
 
+  Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
+
   Languages: English
 
-
-  Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
   Tools: Sketch, VS Code, Sass, Wavesurfer.js
 
 

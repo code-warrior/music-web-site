@@ -1,9 +1,5 @@
 @use 'variables' as *;
 
-.composition-artwork-thumbnail {
-  width: ($grid-unit + $grid-column);
-  height: (7 * $line-height);
-  line-height: 1;
 }
 
 .composition {
@@ -11,6 +7,14 @@
   flex-wrap: wrap;
   margin: 0 auto 36px;
   width: $width--desktop;
+
+  &-artwork {
+    &-thumbnail {
+      width: ($grid-unit + $grid-column);
+      height: (7 * $line-height);
+      line-height: 1;
+    }
+  }
 
   &__thumbnail {
     &--container {

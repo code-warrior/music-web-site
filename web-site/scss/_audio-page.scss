@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+.composition-artwork-thumbnail {
+  width: ($grid-unit + $grid-column);
+  height: (7 * $line-height);
+  line-height: 1;
+}

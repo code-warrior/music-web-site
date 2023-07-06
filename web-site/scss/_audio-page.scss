@@ -8,7 +8,7 @@ header {
   background-color: $background-color--header--non-home-page;
 }
 
-main {
+header + nav {
   margin-top: $height--header;
 }
 

@@ -87,3 +87,28 @@ header + nav {
   color: black;
   cursor: pointer;
 }
+
+header {
+  + nav {
+    margin-bottom: 20px;
+    background-color: #222;
+    position: sticky;
+    z-index: 30;
+    top: 100px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      li {
+        padding: 20px 0 18px;
+        margin: 0 20px;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+}

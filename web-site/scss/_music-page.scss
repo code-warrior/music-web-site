@@ -77,14 +77,14 @@ header + nav {
 }
 
 #heat__waveform--play-pause-button {
-  background-color: red;
-  color: white;
+  background-color: $background-color--track--heat;
+  color: $color--reading-text;
   cursor: pointer;
 }
 
 #x0x0x0__waveform--play-pause-button {
-  background-color: rgb(61, 95, 123);
-  color: black;
+  background-color: $background-color--track--x0x0x0;
+  color: $background-color--header--non-home-page;
   cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ header {
         margin: 0 20px;
 
         &:hover {
-          border-bottom: 2px solid white;
+          border-bottom: 2px solid $color--reading-text;
         }
       }
     }
@@ -114,6 +114,6 @@ header {
 }
 
 .current-genre {
-  color: white;
-  border-bottom: 2px solid white;
+  color: $color--reading-text;
+  border-bottom: 2px solid $color--reading-text;
 }

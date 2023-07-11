@@ -8,8 +8,8 @@ header {
   background-color: $background-color--header--non-home-page;
 }
 
-header + nav {
-  margin-top: $height--header;
+  + nav {
+    margin-top: $height--header;
 }
 
 .composition {
@@ -56,17 +56,22 @@ header + nav {
     }
   }
 
-  &__metadata--container {
-    margin-top: $line-height;
-    text-align: center;
-    font-size: 14px;
-    width: ($grid-unit + $grid-column);
-    margin-right: $grid-gutter;
+  &__metadata {
+    &--container {
+      margin-top: $line-height;
+      text-align: center;
+      font-size: 14px;
+      width: ($grid-unit + $grid-column);
+      margin-right: $grid-gutter;
+    }
   }
 
-  &__synopsis--container {
-    margin-top: $line-height;
-    width: (10 * $grid-unit);
+  &__synopsis {
+    &--container {
+      margin-top: $line-height;
+      width: (10 * $grid-unit);
+  }
+
   }
 }
 

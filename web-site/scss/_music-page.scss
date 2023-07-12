@@ -8,7 +8,24 @@ header {
   background-color: $background-color--header--non-home-page;
 
   + nav {
+    background-color: $background-color--anchors--nav;
     margin-top: $height--header;
+    margin-bottom: $line-height;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      li {
+        padding: $line-height 0 18px;
+        margin: 0 $grid-gutter;
+
+        &:hover {
+          border-bottom: 2px solid $color--reading-text;
+        }
+      }
+    }
 }
 
 .composition {
@@ -90,28 +107,6 @@ header {
   background-color: $background-color--track--x0x0x0;
   color: $background-color--header--non-home-page;
   cursor: pointer;
-}
-
-header {
-  + nav {
-    margin-bottom: $line-height;
-    background-color: $background-color--anchors--nav;
-
-    ul {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-
-      li {
-        padding: $line-height 0 18px;
-        margin: 0 $grid-gutter;
-
-        &:hover {
-          border-bottom: 2px solid $color--reading-text;
-        }
-      }
-    }
-  }
 }
 
 .current-genre {

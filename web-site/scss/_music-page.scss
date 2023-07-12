@@ -95,6 +95,7 @@ header {
 header {
   + nav {
     margin-bottom: $line-height;
+    background-color: $background-color--anchors--nav;
 
     ul {
       display: flex;

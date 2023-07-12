@@ -9,32 +9,32 @@
 /// Grid
 ///
 $grid-column: 60px;
-$grid-gutter: math.div($grid-column, 3);
-$grid-unit: ($grid-column + $grid-gutter);
+$grid-gutter: math.div($grid-column, 3);   // 20px
+$grid-unit: ($grid-column + $grid-gutter); // 60px
 
 ///
 /// Breakpoints
 ///
-$breakpoint--desktop: (12.8 * $grid-unit);
-$breakpoint--tablet: (10 * $grid-unit);
-$breakpoint--mobile: (5.5 * $grid-unit);
+$breakpoint--desktop: (12.8 * $grid-unit);         // 1024px
+$breakpoint--tablet: (10 * $grid-unit);            //  800px
+$breakpoint--mobile: (5.5 * $grid-unit);           //  440px
 
 ///
 /// Widths
 ///
-$width--desktop: (12 * $grid-unit);
-$width--tablet: (8.75 * $grid-unit);
-$width--mobile: (5 * $grid-unit);
-$width--drop-down-menu: (2 * $grid-unit);
+$width--desktop: (12 * $grid-unit);                       // 960px
+$width--tablet: (8.75 * $grid-unit);                      // 700px
+$width--mobile: (5 * $grid-unit);                         // 400px
+$width--drop-down-menu: (2 * $grid-unit);                 // 160px
 
 ///
 /// Heights
 ///
-$line-height: 1.25rem; // 20px
-$height--header: (5 * $line-height);
-$height--header--mobile: (3 * $line-height);
-$height--nav--li: (4 * $line-height);
-$height--drop-down-menu-item: (3 * $line-height);
+$line-height: 1.25rem;                            //  20px
+$height--header: (5 * $line-height);              // 100px
+$height--header--mobile: (3 * $line-height);      //  60px
+$height--nav--li: (4 * $line-height);             //  80px
+$height--drop-down-menu-item: (3 * $line-height); //  60px
 
 ///
 /// Font Stacks

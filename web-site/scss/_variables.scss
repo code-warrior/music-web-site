@@ -10,7 +10,7 @@
 ///
 $grid-column: 60px;
 $grid-gutter: math.div($grid-column, 3);
-$grid-unit: $grid-column + $grid-gutter;
+$grid-unit: ($grid-column + $grid-gutter);
 
 ///
 /// Breakpoints

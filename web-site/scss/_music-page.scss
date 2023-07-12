@@ -102,8 +102,8 @@ header {
       text-align: center;
 
       li {
-        padding: 20px 0 18px;
-        margin: 0 20px;
+        padding: $line-height 0 18px;
+        margin: 0 $grid-gutter;
 
         &:hover {
           border-bottom: 2px solid $color--reading-text;

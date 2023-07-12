@@ -9,8 +9,10 @@ header {
 
   + nav {
     background-color: $background-color--anchors--nav;
-    margin-top: $height--header;
-    margin-bottom: $line-height;
+    margin: {
+      top: $height--header;
+      bottom: $line-height;
+    }
 
     ul {
       display: flex;

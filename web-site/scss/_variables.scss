@@ -30,7 +30,7 @@ $width--drop-down-menu: (2 * $grid-unit);
 ///
 /// Heights
 ///
-$line-height: 20px;
+$line-height: 1.25rem; // 20px
 $height--header: (5 * $line-height);
 $height--header--mobile: (3 * $line-height);
 $height--nav--li: (4 * $line-height);

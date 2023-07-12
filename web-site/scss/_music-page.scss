@@ -91,12 +91,7 @@ header {
   }
 
   }
-}
 
-/// As in key-value pairs. For example,
-// <span class="key">Title</span>: <span class="value">x0x0x0</span>
-.key {
-  font-weight: bold;
 }
 
 #heat__waveform--play-pause-button {
@@ -114,4 +109,10 @@ header {
 .current-genre {
   color: $color--reading-text;
   border-bottom: 2px solid $color--reading-text;
+}
+
+/// As in key-value pairs. For example,
+// <span class="key">Title</span>: <span class="value">x0x0x0</span>
+.key {
+  font-weight: bold;
 }

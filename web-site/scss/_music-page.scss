@@ -7,6 +7,10 @@ header {
   width: 100vw;
   background-color: $background-color--header--non-home-page;
 
+  @media (max-width: $breakpoint--tablet) {
+    height: ($height--header + $line-height);
+  }
+}
 
 main {
   margin: auto;
@@ -44,6 +48,10 @@ main {
     &--container {
       width: ($grid-unit + $grid-column);
       margin-right: $grid-gutter;
+      @media (max-width: $breakpoint--tablet) {
+        order: -1;
+      }
+
     }
   }
 
@@ -61,6 +69,10 @@ main {
 
     &--container {
       width: (10 * $grid-unit);
+
+      @media (max-width: $breakpoint--tablet) {
+        width: $width--waveform-container--tablet;
+      }
     }
 
     &--play-pause-button {
@@ -77,6 +89,19 @@ main {
       font-size: 14px;
       width: ($grid-unit + $grid-column);
       margin-right: $grid-gutter;
+      ol {
+        @media (max-width: $breakpoint--tablet) {
+          list-style-type: disc;
+          text-align: left;
+          margin-left: 10px;
+        }
+      }
+
+      @media (max-width: $breakpoint--tablet) {
+        order: -1;
+        margin-top: 0;
+        width: auto;
+      }
     }
   }
 
@@ -86,6 +111,8 @@ main {
       width: (10 * $grid-unit);
   }
 
+  @media (max-width: $breakpoint--tablet) {
+    width: $width--mobile;
   }
 
 }

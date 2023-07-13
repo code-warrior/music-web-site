@@ -48,10 +48,15 @@ main {
     &--container {
       width: ($grid-unit + $grid-column);
       margin-right: $grid-gutter;
+
       @media (max-width: $breakpoint--tablet) {
         order: -1;
       }
 
+      @media (max-width: $breakpoint--mobile) {
+        width: 140px;
+        margin-right: 10px;
+      }
     }
   }
 
@@ -73,6 +78,10 @@ main {
       @media (max-width: $breakpoint--tablet) {
         width: $width--waveform-container--tablet;
       }
+
+      @media (max-width: $breakpoint--mobile) {
+        width: $width--mobile-small;
+      }
     }
 
     &--play-pause-button {
@@ -89,6 +98,7 @@ main {
       font-size: 14px;
       width: ($grid-unit + $grid-column);
       margin-right: $grid-gutter;
+
       ol {
         @media (max-width: $breakpoint--tablet) {
           list-style-type: disc;
@@ -102,6 +112,12 @@ main {
         margin-top: 0;
         width: auto;
       }
+
+      @media (max-width: $breakpoint--mobile) {
+        width: 130px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
     }
   }
 
@@ -109,12 +125,22 @@ main {
     &--container {
       margin-top: $line-height;
       width: (10 * $grid-unit);
+      @media (max-width: $breakpoint--mobile) {
+        width: $width--mobile-small;
+      }
+    }
+  }
+
   }
 
   @media (max-width: $breakpoint--tablet) {
     width: $width--mobile;
   }
 
+  @media (max-width: $breakpoint--mobile) {
+    margin-bottom: 14px;
+    width: 300px;
+  }
 }
 
 #heat__waveform--play-pause-button {

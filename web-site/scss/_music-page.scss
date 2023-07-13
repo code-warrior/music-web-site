@@ -7,27 +7,9 @@ header {
   width: 100vw;
   background-color: $background-color--header--non-home-page;
 
-  + nav {
-    background-color: $background-color--anchors--nav;
-    margin: {
-      top: $height--header;
-      bottom: $line-height;
-    }
 
-    ul {
-      display: flex;
-      justify-content: center;
-      text-align: center;
 
-      li {
-        padding: $line-height 0 18px;
-        margin: 0 $grid-gutter;
 
-        &:hover {
-          border-bottom: 2px solid $color--reading-text;
-        }
-      }
-    }
 }
 
 .composition {

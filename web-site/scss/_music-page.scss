@@ -8,8 +8,22 @@ header {
   background-color: $background-color--header--non-home-page;
 
 
+main {
+  margin: auto;
+  width: $width--desktop;
 
+  @media (max-width: $breakpoint--desktop) {
+    width: $width--tablet;
+  }
 
+  @media (max-width: $breakpoint--tablet) {
+    width: $width--mobile;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    width: $width--mobile-small;
+    margin-top: ($height--header + $line-height);
+  }
 }
 
 .composition {

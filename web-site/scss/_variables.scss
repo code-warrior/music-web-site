@@ -18,6 +18,7 @@ $grid-unit: ($grid-column + $grid-gutter); // 60px
 $breakpoint--desktop: (12.8 * $grid-unit);         // 1024px
 $breakpoint--tablet: (10 * $grid-unit);            //  800px
 $breakpoint--mobile: (5.5 * $grid-unit);           //  440px
+$breakpoint--mobile--small: (4.6875 * $grid-unit); //  375px
 
 ///
 /// Widths

@@ -75,6 +75,10 @@ main {
     &--container {
       width: (10 * $grid-unit);
 
+      @media (max-width: $breakpoint--desktop) {
+        width: $width--waveform-container--desktop;
+      }
+
       @media (max-width: $breakpoint--tablet) {
         width: $width--waveform-container--tablet;
       }
@@ -125,12 +129,19 @@ main {
     &--container {
       margin-top: $line-height;
       width: (10 * $grid-unit);
+
+      @media (max-width: $breakpoint--desktop) {
+        width: $width--waveform-container--tablet;
+      }
+
       @media (max-width: $breakpoint--mobile) {
         width: $width--mobile-small;
       }
     }
   }
 
+  @media (max-width: $breakpoint--desktop) {
+    width: $width--tablet;
   }
 
   @media (max-width: $breakpoint--tablet) {

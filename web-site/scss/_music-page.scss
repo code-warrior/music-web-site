@@ -1,0 +1,178 @@
+@use 'variables' as *;
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: $background-color--header--non-home-page;
+
+  @media (max-width: $breakpoint--tablet) {
+    height: ($height--header + $line-height);
+  }
+}
+
+main {
+  margin: auto;
+  width: $width--desktop;
+
+  @media (max-width: $breakpoint--desktop) {
+    width: $width--tablet;
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    width: $width--mobile;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    width: $width--mobile-small;
+    margin-top: ($height--header + $line-height);
+  }
+}
+
+.composition {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 36px;
+  width: $width--desktop;
+
+  &-artwork {
+    &-thumbnail {
+      width: ($grid-unit + $grid-column);
+      height: (7 * $line-height);
+      line-height: 1;
+    }
+  }
+
+  &__thumbnail {
+    &--container {
+      width: ($grid-unit + $grid-column);
+      margin-right: $grid-gutter;
+
+      @media (max-width: $breakpoint--tablet) {
+        order: -1;
+      }
+
+      @media (max-width: $breakpoint--mobile) {
+        width: 140px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  /// Wavesurfer embeds a div with a position of absolute as the parent to the
+  /// waveform. In order to ensure that Wavesurfer’s waveform scrolls underneath the
+  /// header, I need to do the following:
+  &__waveform {
+    position: relative;
+    z-index: 0;
+
+    > div {
+      position: relative;
+      z-index: 0;
+    }
+
+    &--container {
+      width: (10 * $grid-unit);
+
+      @media (max-width: $breakpoint--desktop) {
+        width: $width--waveform-container--desktop;
+      }
+
+      @media (max-width: $breakpoint--tablet) {
+        width: $width--waveform-container--tablet;
+      }
+
+      @media (max-width: $breakpoint--mobile) {
+        width: $width--mobile-small;
+      }
+    }
+
+    &--play-pause-button {
+      border: 0;
+      line-height: $line-height;
+      padding: 10px 16px;
+    }
+  }
+
+  &__metadata {
+    &--container {
+      margin-top: $line-height;
+      text-align: center;
+      font-size: 14px;
+      width: ($grid-unit + $grid-column);
+      margin-right: $grid-gutter;
+
+      ol {
+        @media (max-width: $breakpoint--tablet) {
+          list-style-type: disc;
+          text-align: left;
+          margin-left: 10px;
+        }
+      }
+
+      @media (max-width: $breakpoint--tablet) {
+        order: -1;
+        margin-top: 0;
+        width: auto;
+      }
+
+      @media (max-width: $breakpoint--mobile) {
+        width: 130px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__synopsis {
+    &--container {
+      margin-top: $line-height;
+      width: (10 * $grid-unit);
+
+      @media (max-width: $breakpoint--desktop) {
+        width: $width--waveform-container--tablet;
+      }
+
+      @media (max-width: $breakpoint--mobile) {
+        width: $width--mobile-small;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint--desktop) {
+    width: $width--tablet;
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    width: $width--mobile;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    margin-bottom: 14px;
+    width: 300px;
+  }
+}
+
+#heat__waveform--play-pause-button {
+  background-color: $background-color--track--heat;
+  color: $color--reading-text;
+  cursor: pointer;
+}
+
+#x0x0x0__waveform--play-pause-button {
+  background-color: $background-color--track--x0x0x0;
+  color: $background-color--header--non-home-page;
+  cursor: pointer;
+}
+
+.current-genre {
+  color: $color--reading-text;
+  border-bottom: 2px solid $color--reading-text;
+}
+
+/// As in key-value pairs. For example,
+// <span class="key">Title</span>: <span class="value">x0x0x0</span>
+.key {
+  font-weight: bold;
+}

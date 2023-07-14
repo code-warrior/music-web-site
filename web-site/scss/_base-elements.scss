@@ -15,45 +15,6 @@ body {
   }
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  width: $width--desktop;
-  height: 80vh;
-
-  p {
-    width: 48%;
-    text-align: center;
-    font-size: 160%;
-    line-height: 1.4;
-
-    @media (max-width: $breakpoint--desktop) {
-      width: 57%;
-      font-size: 140%;
-    }
-
-    @media (max-width: $breakpoint--tablet) {
-      width: $width--mobile;
-    }
-
-    @media (max-width: $breakpoint--mobile) {
-      font-size: 1rem;
-      padding: 0 20px;
-    }
-  }
-
-  @media (max-width: $breakpoint--desktop) {
-    width: $width--tablet;
-  }
-
-  @media (max-width: $breakpoint--tablet) {
-    width: auto;
-    height: 81vh;
-  }
-}
-
 footer {
   color: $color--reading-text;
   font-size: (.75 * 1rem);
@@ -93,19 +54,28 @@ th {
 }
 
 figure {
-  img {
-    width: 100%;
+  display: block;
+  width: ($grid-unit + $grid-column);
+
+  a {
+    line-height: 0;
   }
 
-  figcaption {
-    width: 15%;
-    height: (.875 * $line-height);
-    margin: -2px auto 0;
-    padding: 4px 12px;
-    background-color: $background-color--header;
-    color: $color--caption;
-    font-size: (.875 * 1rem);
-    line-height: (.875 * $line-height);
-    text-align: center;
+  img {
+    display: block;
+    width: 100%;
   }
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+p:not(:first-of-type) {
+  margin: $line-height 0;
 }

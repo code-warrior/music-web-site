@@ -15,15 +15,19 @@
 
   Emoji Cursor: https://www.emojicursor.app/
 
+  Audio Player: wavesurfer.js (https://wavesurfer.pages.dev/) by ktaspaugh (https://github.com/katspaugh)
+
+
 ## SITE
 
   Design/Programming: Roy Vanegas
 
+  Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
+
   Languages: English
 
-  Tools: Sketch, VS Code, Sass
+  Tools: Sketch, VS Code, Sass, Wavesurfer.js
 
-  Code: https://github.com/code-warrior/music-web-site/tree/master/web-site
 
 ## NOTES
 

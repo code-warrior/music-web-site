@@ -2,9 +2,6 @@
 
 .header-container {
   nav {
-    ul {
-    }
-
     a {
       text-align: center;
       color: $color--reading-text;
@@ -18,7 +15,7 @@
     a {
       display: inline-block;
       width: $grid-unit;
-      height: $height--header--mobile;
+      height: ($height--header--mobile - 1); // An overflow of 1 pixel is causing issues, but I cannot find it
       background-color: $background-color--anchors--nav;
 
       &:hover {
@@ -34,6 +31,14 @@
         height: $height--nav--li;
         line-height: $height--header--mobile;
         transition: $transition-time--links;
+      }
+    }
+
+    .current {
+      background-color: transparent;
+
+      a {
+        background-color: transparent;
       }
     }
 
@@ -56,7 +61,7 @@
     a {
       display: block;
       width: $width--drop-down-menu;
-      line-height: $height--drop-down-menu-item;
+      line-height: ($height--drop-down-menu-item - 1);
       background-color: $background-color--anchors--nav--mobile;
 
       &:hover {
@@ -93,5 +98,36 @@
     @media (max-width: $breakpoint--mobile) {
       display: block;
     }
+  }
+}
+
+#nav--desktop--sub {
+  background-color: $background-color--anchors--nav;
+  margin: {
+    top: $height--header;
+    bottom: $line-height;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    li {
+      padding: $line-height 0 18px;
+      margin: 0 $grid-gutter;
+
+      &:hover {
+        border-bottom: 2px solid $color--reading-text;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    margin-top: ($height--header + $line-height);
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    display: none;
   }
 }

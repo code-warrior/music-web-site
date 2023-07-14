@@ -2,7 +2,14 @@
 @use 'fonts' as *;
 @use 'variables' as *;
 @use 'base-elements' as *;
+@use 'base-classes' as *;
 @use 'typography' as *;
 @use 'anchors' as *;
 @use 'header' as *;
 @use 'nav' as *;
+
+/*
+sass scss/index.scss:css/style.css \
+  scss/_home-page.scss:css/home-page.css \
+  scss/_music-page.scss:css/music-page.css
+*/

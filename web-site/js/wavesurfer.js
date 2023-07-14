@@ -24,8 +24,8 @@ gradient__Heat.addColorStop(0, colors.RED);
 gradient__Heat.addColorStop(1, colors.WHITE);
 
 gradient__x0x0x0.addColorStop(0, colors.BLACK);
-gradient__x0x0x0.addColorStop(.75, colors.GRAY);
-gradient__x0x0x0.addColorStop(1, colors.BLUE);
+gradient__x0x0x0.addColorStop(.75, colors.BLUEISH);
+gradient__x0x0x0.addColorStop(1, colors.PURPLEISH);
 
 const PATH_TO_HEAT = `media/audio/heat--the-hyper-stereo-drum-mix.mp3`;
 const PATH_TO_X0X0X0 = `media/audio/x0x0x0.mp3`;

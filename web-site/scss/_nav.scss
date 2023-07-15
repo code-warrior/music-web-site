@@ -116,6 +116,8 @@
     li {
       padding: $line-height 0 18px;
       margin: 0 $grid-gutter;
+      border-bottom: 2px solid transparent;
+      transition: $transition-time--links;
 
       &:hover {
         border-bottom: 2px solid $color--reading-text;

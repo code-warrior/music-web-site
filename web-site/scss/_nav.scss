@@ -119,6 +119,10 @@
       border-bottom: 2px solid transparent;
       transition: $transition-time--links;
 
+      &.current-genre {
+        border-bottom-color: $color--reading-text;
+      }
+
       &:hover {
         border-bottom: 2px solid $color--reading-text;
       }

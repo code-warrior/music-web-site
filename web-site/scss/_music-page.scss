@@ -169,6 +169,11 @@ main {
 .current-genre {
   color: $color--reading-text;
   border-bottom: 2px solid $color--reading-text;
+#the-dedication__waveform--play-pause-button {
+  background-color: $background-color--track--the-dedication;
+  color: $background-color--header--non-home-page;
+  cursor: pointer;
+}
 }
 
 /// As in key-value pairs. For example,

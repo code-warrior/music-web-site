@@ -5,18 +5,22 @@ import * as consts from './constants.js';
 
 const canvas2D__TheDedication = document.createElement(`canvas`).getContext(`2d`),
     gradient__TheDedication = canvas2D__TheDedication.createLinearGradient(0, 0, 0, 100),
+    canvas2D__Tinistrind = document.createElement(`canvas`).getContext(`2d`),
+    gradient__Tinistrind = canvas2D__Tinistrind.createLinearGradient(0, 0, 0, 100),
     loaders = document.querySelectorAll(`.loader`);
 
 for (let i = 0; i < loaders.length; i++) {
     loaders[i].textContent = "Loading audio. Please wait…"
 }
 
-const compositionTitles = [`the-dedication`];
-
 gradient__TheDedication.addColorStop(0, colors.BLACK);
 gradient__TheDedication.addColorStop(.65, colors.WHITE);
 
+gradient__Tinistrind.addColorStop(0, colors.BLACK);
+gradient__Tinistrind.addColorStop(.65, colors.WHITE);
+
 const PATH_TO_THE_DEDICATION = `media/audio/the-dedication.mp3`;
+const PATH_TO_TINISTRIND = `media/audio/tinistrind.mp3`;
 
 const theDedicationWaveSurferPlayer = WaveSurfer.create({
     container: `#the-dedication-waveform`,
@@ -34,7 +38,7 @@ const theDedicationWaveSurferPlayer = WaveSurfer.create({
 const theDedicationEnvelope = theDedicationWaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
-        fadeOutStart: 204,
+        fadeOutStart: 209,
         volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
         lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
         lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
@@ -43,6 +47,32 @@ const theDedicationEnvelope = theDedicationWaveSurferPlayer.registerPlugin(
     })
 );
 
+const tinistrindWaveSurferPlayer = WaveSurfer.create({
+    container: `#tinistrind-waveform`,
+    waveColor: gradient__Tinistrind,
+    barWidth: consts.UNIVERSAL_BAR_WIDTH,
+    barGap: consts.UNIVERSAL_BAR_GAP,
+    autoplay: consts.UNIVERSAL_AUTO_PLAY,
+    cursorWidth: consts.UNIVERSAL_CURSOR_WIDTH,
+    height: consts.UNIVERSAL_WAVEFORM_HEIGHT,
+    barRadius: consts.UNIVERSAL_BAR_RADIUS,
+    progressColor: colors.OTHER_BLUEISH,
+    url: PATH_TO_TINISTRIND
+});
+
+const tinistrindEnvelope = tinistrindWaveSurferPlayer.registerPlugin(
+    EnvelopePlugin.create({
+        fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
+        fadeOutStart: 200,
+        volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
+        lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
+        lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
+        dragPointSize: consts.UNIVERSAL_ENVELOPE_DRAG_POINT_SIZE,
+        dragPointStroke: colors.BLACK
+    })
+);
+
+const compositionTitles = [`the-dedication`, `tinistrind`];
 const waveformPlayer = document.getElementsByClassName(`composition__waveform`);
 const playButton = new Array(waveformPlayer.length);
 
@@ -71,6 +101,27 @@ theDedicationWaveSurferPlayer.on(`ready`, () => {
             theDedicationWaveSurferPlayer.pause();
         } else {
             theDedicationWaveSurferPlayer.play();
+        }
+    });
+});
+
+tinistrindWaveSurferPlayer.on(`play`, () => {
+    playButton[1].textContent = `Pause`;
+});
+
+tinistrindWaveSurferPlayer.on(`pause`, () => {
+    playButton[1].textContent = `Play`;
+});
+
+tinistrindWaveSurferPlayer.on(`ready`, () => {
+    loaders[1].removeAttribute(`class`);
+    loaders[1].setAttribute(`class`, `disappear`);
+
+    playButton[1].addEventListener(`click`, () => {
+        if (tinistrindWaveSurferPlayer.isPlaying()) {
+            tinistrindWaveSurferPlayer.pause();
+        } else {
+            tinistrindWaveSurferPlayer.play();
         }
     });
 });

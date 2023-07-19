@@ -1,5 +1,5 @@
-import WaveSurfer from 'https://unpkg.com/wavesurfer.js@beta';
-import EnvelopePlugin from 'https://unpkg.com/wavesurfer.js@7.0.0-beta.10/dist/plugins/envelope.js';
+import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7.0.3/dist/wavesurfer.esm.js'
+import EnvelopePlugin from 'https://unpkg.com/wavesurfer.js@7.0.3/dist/plugins/envelope.esm.js'
 import * as colors from './colors.js';
 import * as consts from './constants.js';
 

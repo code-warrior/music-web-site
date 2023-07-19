@@ -52,7 +52,7 @@ const heatWaveSurferPlayer = WaveSurfer.create({
 const heatEnvelope = heatWaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
-        fadeOutStart: 244,
+        fadeOutStart: 249,
         volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
         lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
         lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
@@ -77,7 +77,7 @@ const x0x0x0WaveSurferPlayer = WaveSurfer.create({
 const x0x0x0Envelope = x0x0x0WaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
-        fadeOutStart: 276,
+        fadeOutStart: 281,
         volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
         lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
         lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
@@ -102,7 +102,7 @@ const subYearbookReconstructionEditWaveSurferPlayer = WaveSurfer.create({
 const subYearbookReconstructionEditEnvelope = subYearbookReconstructionEditWaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
-        fadeOutStart: 166,
+        fadeOutStart: 171,
         volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
         lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
         lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,

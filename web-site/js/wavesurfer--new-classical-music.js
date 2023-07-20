@@ -69,7 +69,7 @@ const tinistrindWaveSurferPlayer = WaveSurfer.create({
 const tinistrindEnvelope = tinistrindWaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
-        fadeOutStart: 200,
+        fadeOutStart: 160,
         volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
         lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
         lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,

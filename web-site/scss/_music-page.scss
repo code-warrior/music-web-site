@@ -178,6 +178,12 @@ main {
   cursor: pointer;
 }
 
+#wind-quintet-miniature__waveform--play-pause-button {
+  background-color: $background-color--track--tinistrind;
+  color: $color--reading-text;
+  cursor: pointer;
+}
+
 /// As in key-value pairs. For example,
 // <span class="key">Title</span>: <span class="value">x0x0x0</span>
 .key {

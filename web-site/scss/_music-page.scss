@@ -178,13 +178,13 @@ main {
 }
 
 #tinistrind__waveform--play-pause-button {
-  background-color: $background-color--track--tinistrind;
   color: $color--reading-text;
+  background-color: $background-color--header--non-home-page;
   cursor: pointer;
 }
 
 #wind-quintet-miniature__waveform--play-pause-button {
-  background-color: $background-color--track--tinistrind;
+  background-color: $background-color--header--non-home-page;
   color: $color--reading-text;
   cursor: pointer;
 }

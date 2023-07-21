@@ -62,7 +62,7 @@ const tinistrindWaveSurferPlayer = WaveSurfer.create({
     cursorWidth: consts.UNIVERSAL_CURSOR_WIDTH,
     height: consts.UNIVERSAL_WAVEFORM_HEIGHT,
     barRadius: consts.UNIVERSAL_BAR_RADIUS,
-    progressColor: colors.OTHER_BLUEISH,
+    progressColor: colors.BLACK,
     url: PATH_TO_TINISTRIND
 });
 
@@ -87,7 +87,7 @@ const windQuintetMiniatureWaveSurferPlayer = WaveSurfer.create({
     cursorWidth: consts.UNIVERSAL_CURSOR_WIDTH,
     height: consts.UNIVERSAL_WAVEFORM_HEIGHT,
     barRadius: consts.UNIVERSAL_BAR_RADIUS,
-    progressColor: colors.GRAYISH,
+    progressColor: colors.BLACK,
     url: PATH_TO_WIND_QUINTET_MINIATURE
 });
 

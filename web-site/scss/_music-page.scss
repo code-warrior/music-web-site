@@ -185,6 +185,12 @@ main {
 
 #wind-quintet-miniature__waveform--play-pause-button {
   background-color: $background-color--header--non-home-page;
+  color: $background-color--track--tinistrind;
+  cursor: pointer;
+}
+
+#nude--the-noise-floor-music-rebuild--piano-version__waveform--play-pause-button {
+  background-color: $background-color--play-pause-button--nude-piano-version;
   color: $color--reading-text;
   cursor: pointer;
 }

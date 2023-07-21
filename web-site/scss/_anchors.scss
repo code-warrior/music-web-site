@@ -11,3 +11,21 @@ a {
     color: $color--reading-text;
   }
 }
+
+main {
+  a {
+    transition: $transition-time--links;
+
+    &:link,
+    &:visited {
+      color: $color--links;
+      padding-bottom: 2px;
+      border-bottom: 1px solid $color--links--border;
+    }
+
+    &:hover {
+      color: $color--reading-text;
+      border-bottom-color: transparent;
+    }
+  }
+}

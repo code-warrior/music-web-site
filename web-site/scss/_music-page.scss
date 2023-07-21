@@ -105,6 +105,10 @@ main {
       margin-right: $grid-gutter;
 
       ol {
+        li {
+          margin-bottom: 8px;
+        }
+
         @media (max-width: $breakpoint--tablet) {
           list-style-type: disc;
           text-align: left;

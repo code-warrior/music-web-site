@@ -6,4 +6,5 @@ export const
     BLUEISH = `rgb(61, 95, 123)`,
     OTHER_BLUEISH = `rgb(84, 110, 122)`,
     GRAY = `rgb(117, 117, 117)`,
-    GRAYISH = `rgb(124, 129, 133)`;
+    GRAYISH = `rgb(124, 129, 133)`,
+    NUDE_PIANO_BG_COLOR = `rgb(128, 96, 16)`;

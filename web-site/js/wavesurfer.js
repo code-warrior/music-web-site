@@ -70,7 +70,7 @@ const x0x0x0WaveSurferPlayer = WaveSurfer.create({
     cursorWidth: consts.UNIVERSAL_CURSOR_WIDTH,
     height: consts.UNIVERSAL_WAVEFORM_HEIGHT,
     barRadius: consts.UNIVERSAL_BAR_RADIUS,
-    progressColor: colors.GRAY,
+    progressColor: colors.BLUEISH,
     url: PATH_TO_X0X0X0
 });
 

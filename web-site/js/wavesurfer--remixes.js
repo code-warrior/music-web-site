@@ -5,16 +5,20 @@ import * as consts from './constants.js';
 
 const canvas2D__Nude__Piano_Version = document.createElement(`canvas`).getContext(`2d`),
     gradient__Nude__Piano_Version = canvas2D__Nude__Piano_Version.createLinearGradient(0, 0, 0, 100),
+    canvas2D__Nude__Guitar_Version = document.createElement(`canvas`).getContext(`2d`),
+    gradient__Nude__Guitar_Version = canvas2D__Nude__Guitar_Version.createLinearGradient(0, 0, 0, 100),
     loaders = document.querySelectorAll(`.loader`);
 
 for (let i = 0; i < loaders.length; i++) {
     loaders[i].textContent = "Loading audio. Please wait…"
 }
 
-const compositionTitles = [`nude--the-noise-floor-music-rebuild--piano-version`];
+const compositionTitles = [`nude--the-noise-floor-music-rebuild--piano-version`, `nude--the-noise-floor-music-rebuild--guitar-version`];
 
 gradient__Nude__Piano_Version.addColorStop(0, colors.NUDE_PIANO_BG_COLOR);
 gradient__Nude__Piano_Version.addColorStop(1, colors.WHITE);
+gradient__Nude__Guitar_Version.addColorStop(0, colors.NUDE_GUITAR_BG_COLOR);
+gradient__Nude__Guitar_Version.addColorStop(1, colors.WHITE);
 
 const nudePianoVersionWaveSurferPlayer = WaveSurfer.create({
     container: `#nude--the-noise-floor-music-rebuild--piano-version-waveform`,
@@ -30,6 +34,31 @@ const nudePianoVersionWaveSurferPlayer = WaveSurfer.create({
 });
 
 const nudePianoVersionEnvelope = nudePianoVersionWaveSurferPlayer.registerPlugin(
+    EnvelopePlugin.create({
+        fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
+        fadeOutStart: 245,
+        volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
+        lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
+        lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
+        dragPointSize: consts.UNIVERSAL_ENVELOPE_DRAG_POINT_SIZE,
+        dragPointStroke: colors.BLACK
+    })
+);
+
+const nudeGuitarVersionWaveSurferPlayer = WaveSurfer.create({
+    container: `#nude--the-noise-floor-music-rebuild--guitar-version-waveform`,
+    waveColor: gradient__Nude__Piano_Version,
+    barWidth: consts.UNIVERSAL_BAR_WIDTH,
+    barGap: consts.UNIVERSAL_BAR_GAP,
+    autoplay: consts.UNIVERSAL_AUTO_PLAY,
+    cursorWidth: consts.UNIVERSAL_CURSOR_WIDTH,
+    height: consts.UNIVERSAL_WAVEFORM_HEIGHT,
+    barRadius: consts.UNIVERSAL_BAR_RADIUS,
+    progressColor: colors.NUDE_GUITAR_BG_COLOR,
+    url: `media/audio/nude--the-noise-floor-music-rebuild--guitar-version.mp3`
+});
+
+const nudeGuitarVersionEnvelope = nudeGuitarVersionWaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
         fadeOutStart: 245,
@@ -69,6 +98,28 @@ nudePianoVersionWaveSurferPlayer.on(`ready`, () => {
             nudePianoVersionWaveSurferPlayer.pause();
         } else {
             nudePianoVersionWaveSurferPlayer.play();
+        }
+    });
+});
+
+
+nudeGuitarVersionWaveSurferPlayer.on(`play`, () => {
+    playButton[1].textContent = `Pause`;
+});
+
+nudeGuitarVersionWaveSurferPlayer.on(`pause`, () => {
+    playButton[1].textContent = `Play`;
+});
+
+nudeGuitarVersionWaveSurferPlayer.on(`ready`, () => {
+    loaders[1].removeAttribute(`class`);
+    loaders[1].setAttribute(`class`, `disappear`);
+
+    playButton[1].addEventListener(`click`, () => {
+        if (nudeGuitarVersionWaveSurferPlayer.isPlaying()) {
+            nudeGuitarVersionWaveSurferPlayer.pause();
+        } else {
+            nudeGuitarVersionWaveSurferPlayer.play();
         }
     });
 });

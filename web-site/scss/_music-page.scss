@@ -190,6 +190,11 @@ main {
   color: $color--reading-text;
 }
 
+#nude--the-noise-floor-music-rebuild--guitar-version__waveform--play-pause-button {
+  background-color: $background-color--play-pause-button--nude-guitar-version;
+  color: $color--reading-text;
+}
+
 /// As in key-value pairs. For example,
 // <span class="key">Title</span>: <span class="value">x0x0x0</span>
 .key {

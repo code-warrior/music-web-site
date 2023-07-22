@@ -2,7 +2,6 @@ import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7.0.3/dist/wavesurfer.es
 import EnvelopePlugin from 'https://unpkg.com/wavesurfer.js@7.0.3/dist/plugins/envelope.esm.js'
 import * as colors from './colors.js';
 import * as consts from './constants.js';
-import {NUDE_PIANO_BG_COLOR} from "./colors.js";
 
 const canvas2D__Nude__Piano_Version = document.createElement(`canvas`).getContext(`2d`),
     gradient__Nude__Piano_Version = canvas2D__Nude__Piano_Version.createLinearGradient(0, 0, 0, 100),

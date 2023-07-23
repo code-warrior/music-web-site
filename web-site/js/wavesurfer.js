@@ -124,20 +124,20 @@ for(let i = 0; i < waveformPlayer.length; i++) {
 }
 
 subYearbookReconstructionEditWaveSurferPlayer.on(`play`, () => {
-    playButton[2].textContent = `Pause`;
+    playButton[0].textContent = `Pause`;
 });
 
 subYearbookReconstructionEditWaveSurferPlayer.on(`pause`, () => {
-    playButton[2].textContent = `Play`;
+    playButton[0].textContent = `Play`;
 });
 
 subYearbookReconstructionEditWaveSurferPlayer.on(`ready`, () => {
-    loaders[2].removeAttribute(`class`);
-    loaders[2].setAttribute(`class`, `disappear`);
+    loaders[0].removeAttribute(`class`);
+    loaders[0].setAttribute(`class`, `disappear`);
 
-    playButton[2].addEventListener(`click`, () => {
         if (subYearbookReconstructionEditWaveSurferPlayer.isPlaying()) {
             subYearbookReconstructionEditWaveSurferPlayer.pause();
+    playButton[0].addEventListener(`click`, () => {
         } else {
             subYearbookReconstructionEditWaveSurferPlayer.play();
         }
@@ -146,18 +146,18 @@ subYearbookReconstructionEditWaveSurferPlayer.on(`ready`, () => {
 
 
 heatWaveSurferPlayer.on(`play`, () => {
-    playButton[0].textContent = `Pause`;
+    playButton[1].textContent = `Pause`;
 });
 
 heatWaveSurferPlayer.on(`pause`, () => {
-    playButton[0].textContent = `Play`;
+    playButton[1].textContent = `Play`;
 });
 
 heatWaveSurferPlayer.on(`ready`, () => {
-    loaders[0].removeAttribute(`class`);
-    loaders[0].setAttribute(`class`, `disappear`);
+    loaders[1].removeAttribute(`class`);
+    loaders[1].setAttribute(`class`, `disappear`);
 
-    playButton[0].addEventListener(`click`, () => {
+    playButton[1].addEventListener(`click`, () => {
         if (heatWaveSurferPlayer.isPlaying()) {
             heatWaveSurferPlayer.pause();
         } else {
@@ -167,18 +167,18 @@ heatWaveSurferPlayer.on(`ready`, () => {
 });
 
 x0x0x0WaveSurferPlayer.on(`play`, () => {
-    playButton[1].textContent = `Pause`;
+    playButton[2].textContent = `Pause`;
 });
 
 x0x0x0WaveSurferPlayer.on(`pause`, () => {
-    playButton[1].textContent = `Play`;
+    playButton[2].textContent = `Play`;
 });
 
 x0x0x0WaveSurferPlayer.on(`ready`, () => {
-    loaders[1].removeAttribute(`class`);
-    loaders[1].setAttribute(`class`, `disappear`);
+    loaders[2].removeAttribute(`class`);
+    loaders[2].setAttribute(`class`, `disappear`);
 
-    playButton[1].addEventListener(`click`, () => {
+    playButton[2].addEventListener(`click`, () => {
         if (x0x0x0WaveSurferPlayer.isPlaying()) {
             x0x0x0WaveSurferPlayer.pause();
         } else {

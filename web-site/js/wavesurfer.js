@@ -122,27 +122,26 @@ for(let i = 0; i < waveformPlayer.length; i++) {
     waveformPlayer[i].appendChild(playButton[i]);
 }
 
-subYearbookReconstructionEditWaveSurferPlayer.on(`play`, () => {
+tenYearsLateWaveSurferPlayer.on(`play`, () => {
     playButton[0].textContent = `Pause`;
 });
 
-subYearbookReconstructionEditWaveSurferPlayer.on(`pause`, () => {
+tenYearsLateWaveSurferPlayer.on(`pause`, () => {
     playButton[0].textContent = `Play`;
 });
 
-subYearbookReconstructionEditWaveSurferPlayer.on(`ready`, () => {
+tenYearsLateWaveSurferPlayer.on(`ready`, () => {
     loaders[0].removeAttribute(`class`);
     loaders[0].setAttribute(`class`, `disappear`);
 
-        if (subYearbookReconstructionEditWaveSurferPlayer.isPlaying()) {
-            subYearbookReconstructionEditWaveSurferPlayer.pause();
     playButton[0].addEventListener(`click`, () => {
+        if (tenYearsLateWaveSurferPlayer.isPlaying()) {
+            tenYearsLateWaveSurferPlayer.pause();
         } else {
-            subYearbookReconstructionEditWaveSurferPlayer.play();
+            tenYearsLateWaveSurferPlayer.play();
         }
     });
 });
-
 
 heatWaveSurferPlayer.on(`play`, () => {
     playButton[1].textContent = `Pause`;

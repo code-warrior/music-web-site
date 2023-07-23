@@ -111,7 +111,6 @@ const subYearbookReconstructionEditEnvelope = subYearbookReconstructionEditWaveS
     })
 );
 
-// A node list of waveform players
 const waveformPlayer = document.getElementsByClassName(`composition__waveform`);
 const playButton = new Array(waveformPlayer.length);
 

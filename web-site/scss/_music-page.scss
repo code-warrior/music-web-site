@@ -195,6 +195,11 @@ main {
   color: $color--reading-text;
 }
 
+#ten-years-late__waveform--play-pause-button {
+  background-color: $background-color--root;
+  color: $color--reading-text;
+}
+
 /// As in key-value pairs. For example,
 // <span class="key">Title</span>: <span class="value">x0x0x0</span>
 .key {

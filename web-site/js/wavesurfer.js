@@ -8,7 +8,9 @@ https://unpkg.com/wavesurfer.js@beta/dist/plugins/envelope.js redirects to
 https://unpkg.com/wavesurfer.js@7.0.0-beta.10/dist/plugins/envelope.js
 */
 
-const canvas2D__Heat = document.createElement(`canvas`).getContext(`2d`),
+const canvas2D__TenYearsLate = document.createElement(`canvas`).getContext(`2d`),
+    gradient__TenYearsLate = canvas2D__TenYearsLate.createLinearGradient(0, 0, 0, 100),
+    canvas2D__Heat = document.createElement(`canvas`).getContext(`2d`),
     gradient__Heat = canvas2D__Heat.createLinearGradient(0, 0, 0, 100),
     canvas2D__x0x0x0 = document.createElement(`canvas`).getContext(`2d`),
     gradient__x0x0x0 = canvas2D__x0x0x0.createLinearGradient(0, 0, 0, 100),
@@ -20,7 +22,10 @@ for (let i = 0; i < loaders.length; i++) {
     loaders[i].textContent = "Loading audio. Please wait…"
 }
 
-const compositionTitles = [`heat`, `x0x0x0`, `sub--yearbook-reconstruction-edit`];
+const compositionTitles = [`ten-years-late`, `heat`, `x0x0x0`, `sub--yearbook-reconstruction-edit`];
+
+gradient__TenYearsLate.addColorStop(0, colors.BLACK);
+gradient__TenYearsLate.addColorStop(1, colors.WHITE);
 
 gradient__Heat.addColorStop(0, colors.RED);
 gradient__Heat.addColorStop(1, colors.WHITE);
@@ -32,9 +37,35 @@ gradient__x0x0x0.addColorStop(1, colors.PURPLEISH);
 gradient__Sub_reconstruction_edit.addColorStop(0, colors.BLACK);
 gradient__Sub_reconstruction_edit.addColorStop(1, colors.WHITE);
 
+const PATH_TO_TEN_YEARS_LATE = `media/audio/ten-years-late.mp3`;
 const PATH_TO_HEAT = `media/audio/heat--the-hyper-stereo-drum-mix.mp3`;
 const PATH_TO_X0X0X0 = `media/audio/x0x0x0.mp3`;
 const PATH_TO_SUB_RECONSTRUCTION_EDIT = `media/audio/sub--2004-2005-yearbook-reconstruction-edit.mp3`;
+
+const tenYearsLateWaveSurferPlayer = WaveSurfer.create({
+    container: `#ten-years-late-waveform`,
+    waveColor: gradient__TenYearsLate,
+    barWidth: consts.UNIVERSAL_BAR_WIDTH,
+    barGap: consts.UNIVERSAL_BAR_GAP,
+    autoplay: consts.UNIVERSAL_AUTO_PLAY,
+    cursorWidth: consts.UNIVERSAL_CURSOR_WIDTH,
+    height: consts.UNIVERSAL_WAVEFORM_HEIGHT,
+    barRadius: consts.UNIVERSAL_BAR_RADIUS,
+    progressColor: colors.BLACK,
+    url: PATH_TO_TEN_YEARS_LATE
+});
+
+const tenYearsLateEnvelope = tenYearsLateWaveSurferPlayer.registerPlugin(
+    EnvelopePlugin.create({
+        fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
+        fadeOutStart: 195,
+        volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
+        lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
+        lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
+        dragPointSize: consts.UNIVERSAL_ENVELOPE_DRAG_POINT_SIZE,
+        dragPointStroke: colors.BLACK
+    })
+);
 
 const heatWaveSurferPlayer = WaveSurfer.create({
     container: `#heat-waveform`,

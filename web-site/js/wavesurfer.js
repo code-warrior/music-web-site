@@ -184,3 +184,24 @@ x0x0x0WaveSurferPlayer.on(`ready`, () => {
         }
     });
 });
+
+subYearbookReconstructionEditWaveSurferPlayer.on(`play`, () => {
+    playButton[3].textContent = `Pause`;
+});
+
+subYearbookReconstructionEditWaveSurferPlayer.on(`pause`, () => {
+    playButton[3].textContent = `Play`;
+});
+
+subYearbookReconstructionEditWaveSurferPlayer.on(`ready`, () => {
+    loaders[3].removeAttribute(`class`);
+    loaders[3].setAttribute(`class`, `disappear`);
+
+    playButton[3].addEventListener(`click`, () => {
+        if (subYearbookReconstructionEditWaveSurferPlayer.isPlaying()) {
+            subYearbookReconstructionEditWaveSurferPlayer.pause();
+        } else {
+            subYearbookReconstructionEditWaveSurferPlayer.play();
+        }
+    });
+});

@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+main {
+  display: block;
+  margin: ($height--header + 20) auto 0;
+}
+
+header {
+  @media (max-width: $breakpoint--tablet) {
+    height: ($height--header + $line-height);
+  }
+}
+
+figure {
+  float: right;
+  width: $width--mobile;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    padding: 8px 0;
+    height: (.875 * $line-height);
+    color: $color--reading-text;
+    font-size: (.875 * 1rem);
+    font-style: italic;
+    line-height: (.875 * $line-height);
+    text-align: center;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    width: ($width--mobile - 100);
+  }
+}

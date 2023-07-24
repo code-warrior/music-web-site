@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+main {
+  margin-top: ($height--header + $line-height);
+
+  p {
+    text-align: center;
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    margin-top: ($height--header + (2 * $line-height));
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    padding: 0 $grid-gutter;
+    width: auto;
+  }
+}

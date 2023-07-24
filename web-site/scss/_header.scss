@@ -1,9 +1,13 @@
 @use 'variables' as *;
 
 header {
-  color: $color--reading-text;
-  background-color: $background-color--header--home-page;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
   height: $height--header;
+  background-color: $background-color--header--non-home-page;
+  color: $color--reading-text;
 
   .header-container {
     display: flex;
@@ -29,6 +33,7 @@ header {
     @media (max-width: $breakpoint--tablet) {
       display: block;
       width: auto;
+      height: ($height--header + $line-height);
     }
   }
 

@@ -1,17 +1,5 @@
 @use 'variables' as *;
 
-header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100vw;
-  background-color: $background-color--header--non-home-page;
-
-  @media (max-width: $breakpoint--tablet) {
-    height: ($height--header + $line-height);
-  }
-}
-
 main {
   margin: auto;
   width: $width--desktop;

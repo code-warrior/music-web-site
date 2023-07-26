@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+main {
+  margin-top: ($height--header + $line-height);
+
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+
+    @media (max-width: $breakpoint--tablet) {
+      margin-top: 140px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    &:link {
+      border: none;
+    }
+  }
+}

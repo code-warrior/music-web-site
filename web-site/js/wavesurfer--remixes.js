@@ -61,7 +61,7 @@ const nudeGuitarVersionWaveSurferPlayer = WaveSurfer.create({
 const nudeGuitarVersionEnvelope = nudeGuitarVersionWaveSurferPlayer.registerPlugin(
     EnvelopePlugin.create({
         fadeInEnd: consts.UNIVERSAL_ENVELOPE_FADE_IN_END,
-        fadeOutStart: 245,
+        fadeOutStart: 233,
         volume: consts.UNIVERSAL_ENVELOPE_INITIAL_VOLUME,
         lineColor: consts.UNIVERSAL_ENVELOPE_LINE_COLOR,
         lineWidth: consts.UNIVERSAL_ENVELOPE_LINE_WIDTH,
